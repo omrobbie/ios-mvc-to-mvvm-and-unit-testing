@@ -8,13 +8,13 @@
 
 import XCTest
 
+@testable
+import MVC_to_MVVM
+
 class MVC_to_MVVMTests: XCTestCase {
 
-    func testToPass() {
-        XCTAssertEqual(1, 1)
-    }
-
-    func testToFail() {
-        XCTAssertEqual(0, 1)
+    func testCourseViewModel() {
+        let course = Course(id: 0, name: "Learn with omrobbie", number_of_lessons: 50)
+        let courseViewModel = CourseViewModel(course: course)
     }
 }
