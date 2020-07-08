@@ -15,6 +15,7 @@
 		FCB630C024B5A0B400C79882 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB630BE24B5A0B400C79882 /* LaunchScreen.storyboard */; };
 		FCB630C824B5A1B700C79882 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB630C724B5A1B700C79882 /* Course.swift */; };
 		FCB630CD24B5A43B00C79882 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB630CC24B5A43B00C79882 /* CourseCell.swift */; };
+		FCB630D324B5FD8000C79882 /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB630D224B5FD8000C79882 /* CourseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FCB630C124B5A0B400C79882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCB630C724B5A1B700C79882 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		FCB630CC24B5A43B00C79882 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		FCB630D224B5FD8000C79882 /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		FCB630B224B5A0B200C79882 /* MVC to MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				FCB630D124B5FD7000C79882 /* ViewModel */,
 				FCB630CA24B5A3B500C79882 /* Model */,
 				FCB630C924B5A3AD00C79882 /* View */,
 				FCB630CB24B5A3BB00C79882 /* Controller */,
@@ -95,6 +98,14 @@
 				FCB630B724B5A0B200C79882 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCB630D124B5FD7000C79882 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FCB630D224B5FD8000C79882 /* CourseViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				FCB630C824B5A1B700C79882 /* Course.swift in Sources */,
 				FCB630B824B5A0B200C79882 /* ViewController.swift in Sources */,
 				FCB630B424B5A0B200C79882 /* AppDelegate.swift in Sources */,
+				FCB630D324B5FD8000C79882 /* CourseViewModel.swift in Sources */,
 				FCB630B624B5A0B200C79882 /* SceneDelegate.swift in Sources */,
 				FCB630CD24B5A43B00C79882 /* CourseCell.swift in Sources */,
 			);

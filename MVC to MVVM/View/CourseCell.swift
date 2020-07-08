@@ -10,17 +10,23 @@ import UIKit
 
 class CourseCell: UITableViewCell {
 
-    var course: Course! {
-        didSet {
-            textLabel?.text = course.name
+//    var course: Course! {
+//        didSet {
+//            textLabel?.text = course.name
+//
+//            if course.number_of_lessons > 35 {
+//                accessoryType = .detailDisclosureButton
+//                detailTextLabel?.text = "Lesson 30+ Check it Out!"
+//            } else {
+//                detailTextLabel?.text = "Lesson \(course.number_of_lessons)"
+//                accessoryType = .none
+//            }
+//        }
+//    }
 
-            if course.number_of_lessons > 35 {
-                accessoryType = .detailDisclosureButton
-                detailTextLabel?.text = "Lesson 30+ Check it Out!"
-            } else {
-                detailTextLabel?.text = "Lesson \(course.number_of_lessons)"
-                accessoryType = .none
-            }
+    var courseViewModel: CourseViewModel! {
+        didSet {
+            textLabel?.text = courseViewModel.name
         }
     }
 
