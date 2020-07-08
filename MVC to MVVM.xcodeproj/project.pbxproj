@@ -16,7 +16,18 @@
 		FCB630C824B5A1B700C79882 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB630C724B5A1B700C79882 /* Course.swift */; };
 		FCB630CD24B5A43B00C79882 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB630CC24B5A43B00C79882 /* CourseCell.swift */; };
 		FCB630D324B5FD8000C79882 /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB630D224B5FD8000C79882 /* CourseViewModel.swift */; };
+		FCB630DB24B6045600C79882 /* MVC_to_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB630DA24B6045600C79882 /* MVC_to_MVVMTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCB630DD24B6045600C79882 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCB630A824B5A0B200C79882 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCB630AF24B5A0B200C79882;
+			remoteInfo = "MVC to MVVM";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FCB630B024B5A0B200C79882 /* MVC to MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC to MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,10 +41,20 @@
 		FCB630C724B5A1B700C79882 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		FCB630CC24B5A43B00C79882 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		FCB630D224B5FD8000C79882 /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
+		FCB630D824B6045600C79882 /* MVC to MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVC to MVVMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCB630DA24B6045600C79882 /* MVC_to_MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVC_to_MVVMTests.swift; sourceTree = "<group>"; };
+		FCB630DC24B6045600C79882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FCB630AD24B5A0B200C79882 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB630D524B6045600C79882 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				FCB630B224B5A0B200C79882 /* MVC to MVVM */,
+				FCB630D924B6045600C79882 /* MVC to MVVMTests */,
 				FCB630B124B5A0B200C79882 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				FCB630B024B5A0B200C79882 /* MVC to MVVM.app */,
+				FCB630D824B6045600C79882 /* MVC to MVVMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +131,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		FCB630D924B6045600C79882 /* MVC to MVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCB630DA24B6045600C79882 /* MVC_to_MVVMTests.swift */,
+				FCB630DC24B6045600C79882 /* Info.plist */,
+			);
+			path = "MVC to MVVMTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,6 +160,24 @@
 			productReference = FCB630B024B5A0B200C79882 /* MVC to MVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FCB630D724B6045600C79882 /* MVC to MVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCB630DF24B6045600C79882 /* Build configuration list for PBXNativeTarget "MVC to MVVMTests" */;
+			buildPhases = (
+				FCB630D424B6045600C79882 /* Sources */,
+				FCB630D524B6045600C79882 /* Frameworks */,
+				FCB630D624B6045600C79882 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCB630DE24B6045600C79882 /* PBXTargetDependency */,
+			);
+			name = "MVC to MVVMTests";
+			productName = "MVC to MVVMTests";
+			productReference = FCB630D824B6045600C79882 /* MVC to MVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -140,6 +190,10 @@
 				TargetAttributes = {
 					FCB630AF24B5A0B200C79882 = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					FCB630D724B6045600C79882 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = FCB630AF24B5A0B200C79882;
 					};
 				};
 			};
@@ -157,6 +211,7 @@
 			projectRoot = "";
 			targets = (
 				FCB630AF24B5A0B200C79882 /* MVC to MVVM */,
+				FCB630D724B6045600C79882 /* MVC to MVVMTests */,
 			);
 		};
 /* End PBXProject section */
@@ -169,6 +224,13 @@
 				FCB630C024B5A0B400C79882 /* LaunchScreen.storyboard in Resources */,
 				FCB630BD24B5A0B400C79882 /* Assets.xcassets in Resources */,
 				FCB630BB24B5A0B200C79882 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB630D624B6045600C79882 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +250,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FCB630D424B6045600C79882 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB630DB24B6045600C79882 /* MVC_to_MVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCB630DE24B6045600C79882 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCB630AF24B5A0B200C79882 /* MVC to MVVM */;
+			targetProxy = FCB630DD24B6045600C79882 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FCB630B924B5A0B200C79882 /* Main.storyboard */ = {
@@ -358,6 +436,44 @@
 			};
 			name = Release;
 		};
+		FCB630E024B6045600C79882 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MVC to MVVMTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omrobbie.MVC-to-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVC to MVVM.app/MVC to MVVM";
+			};
+			name = Debug;
+		};
+		FCB630E124B6045600C79882 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MVC to MVVMTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omrobbie.MVC-to-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVC to MVVM.app/MVC to MVVM";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -375,6 +491,15 @@
 			buildConfigurations = (
 				FCB630C524B5A0B400C79882 /* Debug */,
 				FCB630C624B5A0B400C79882 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCB630DF24B6045600C79882 /* Build configuration list for PBXNativeTarget "MVC to MVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCB630E024B6045600C79882 /* Debug */,
+				FCB630E124B6045600C79882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
