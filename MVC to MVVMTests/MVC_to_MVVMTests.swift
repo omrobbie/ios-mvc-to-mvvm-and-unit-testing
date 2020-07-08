@@ -14,7 +14,17 @@ import MVC_to_MVVM
 class MVC_to_MVVMTests: XCTestCase {
 
     func testCourseViewModel() {
-        let course = Course(id: 0, name: "Learn with omrobbie", number_of_lessons: 50)
+        let course = Course(id: 0, name: "Learn with omrobbie", number_of_lessons: 10)
         let courseViewModel = CourseViewModel(course: course)
+
+        XCTAssertEqual(courseViewModel.name, course.name)
+
+        if course.number_of_lessons > 35 {
+            XCTAssertEqual(courseViewModel.detailTextString, "Lesson 30+ Check it Out!")
+            XCTAssertEqual(courseViewModel.accessoryType, UITableViewCell.AccessoryType.detailDisclosureButton)
+        } else {
+            XCTAssertEqual(courseViewModel.detailTextString, "Lesson \(course.number_of_lessons)")
+            XCTAssertEqual(courseViewModel.accessoryType, UITableViewCell.AccessoryType.none)
+        }
     }
 }
