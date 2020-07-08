@@ -10,4 +10,11 @@ import XCTest
 
 class MVC_to_MVVMTests: XCTestCase {
 
+    func testToPass() {
+        XCTAssertEqual(1, 1)
+    }
+
+    func testToFail() {
+        XCTAssertEqual(0, 1)
+    }
 }
