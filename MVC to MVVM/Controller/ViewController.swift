@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     private func setupList() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(CourseCell.self, forCellReuseIdentifier: "cell")
     }
 }
 
@@ -30,12 +31,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
-        cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
-
-        let item = dummyData[indexPath.row]
-        cell.textLabel?.text = item.name
-        cell.detailTextLabel?.text = "Lesson \(item.number_of_lessons)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CourseCell
+        cell.course = dummyData[indexPath.row]
         return cell
     }
 }
