@@ -26,12 +26,16 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return dummyData.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
-        cell.textLabel?.text = "Item \(indexPath.row)"
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
+
+        let item = dummyData[indexPath.row]
+        cell.textLabel?.text = item.name
+        cell.detailTextLabel?.text = "Lesson \(item.number_of_lessons)"
         return cell
     }
 }

@@ -13,6 +13,7 @@
 		FCB630BB24B5A0B200C79882 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB630B924B5A0B200C79882 /* Main.storyboard */; };
 		FCB630BD24B5A0B400C79882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB630BC24B5A0B400C79882 /* Assets.xcassets */; };
 		FCB630C024B5A0B400C79882 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB630BE24B5A0B400C79882 /* LaunchScreen.storyboard */; };
+		FCB630C824B5A1B700C79882 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB630C724B5A1B700C79882 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FCB630BC24B5A0B400C79882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCB630BF24B5A0B400C79882 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCB630C124B5A0B400C79882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCB630C724B5A1B700C79882 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				FCB630B324B5A0B200C79882 /* AppDelegate.swift */,
 				FCB630B524B5A0B200C79882 /* SceneDelegate.swift */,
 				FCB630B724B5A0B200C79882 /* ViewController.swift */,
+				FCB630C724B5A1B700C79882 /* Course.swift */,
 				FCB630B924B5A0B200C79882 /* Main.storyboard */,
 				FCB630BC24B5A0B400C79882 /* Assets.xcassets */,
 				FCB630BE24B5A0B400C79882 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB630C824B5A1B700C79882 /* Course.swift in Sources */,
 				FCB630B824B5A0B200C79882 /* ViewController.swift in Sources */,
 				FCB630B424B5A0B200C79882 /* AppDelegate.swift in Sources */,
 				FCB630B624B5A0B200C79882 /* SceneDelegate.swift in Sources */,
