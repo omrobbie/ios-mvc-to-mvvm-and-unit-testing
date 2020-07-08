@@ -18,13 +18,16 @@ class MVC_to_MVVMTests: XCTestCase {
         let courseViewModel = CourseViewModel(course: course)
 
         XCTAssertEqual(courseViewModel.name, course.name)
+        XCTAssertEqual(courseViewModel.detailTextString, "Lesson \(course.number_of_lessons)")
+        XCTAssertEqual(courseViewModel.accessoryType, UITableViewCell.AccessoryType.none)
+    }
 
-        if course.number_of_lessons > 35 {
-            XCTAssertEqual(courseViewModel.detailTextString, "Lesson 30+ Check it Out!")
-            XCTAssertEqual(courseViewModel.accessoryType, UITableViewCell.AccessoryType.detailDisclosureButton)
-        } else {
-            XCTAssertEqual(courseViewModel.detailTextString, "Lesson \(course.number_of_lessons)")
-            XCTAssertEqual(courseViewModel.accessoryType, UITableViewCell.AccessoryType.none)
-        }
+    func testCourseViewModelLessonOverThreshold() {
+        let course = Course(id: 0, name: "Learn with omrobbie", number_of_lessons: 100)
+        let courseViewModel = CourseViewModel(course: course)
+
+        XCTAssertEqual(courseViewModel.name, course.name)
+        XCTAssertEqual(courseViewModel.detailTextString, "Lesson 30+ Check it Out!")
+        XCTAssertEqual(courseViewModel.accessoryType, UITableViewCell.AccessoryType.detailDisclosureButton)
     }
 }
